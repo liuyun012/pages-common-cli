@@ -1,0 +1,79 @@
+// created by liminshen
+// for homepage
+//time 2017/04/14
+//视频背景
+.video-container{
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -100;
+	overflow: hidden;
+	// video{
+	// 	left: 50%;
+	// 	min-height: 100%;
+	// 	min-width: 100%;
+	// 	position: absolute;
+	// 	-webkit-transform: translateX(-50%);
+	// 	transform: translateX(-50%);
+	// }
+}
+
+//下载内容
+.download-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	.shadow-black{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+	}
+}
+.download-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	// margin: 0 auto;
+	.log{
+		position: absolute;
+		top: 28px;
+		left: 27px;
+		width: 116px;
+		height: 87px;
+	}
+	.cn-title{
+		position: absolute;
+		left: 37px;
+		bottom: 276px;
+		font-size:64px;
+		color:#fff7e9;
+		font-family:PingFangSC-Regular, sans-serif;
+	}
+	.en-title{
+		position: absolute;
+		bottom: 163px;
+		left: 113px;
+		font-size:64px;
+		color:#fef8e6;
+		font-family:AvenirNext-Regular;
+	}
+	.entr{
+		position: absolute;
+		bottom: 85px;
+		left: 50%;
+		transform: translateX(-50%);
+		width:288px;
+		height:57px;
+		border-radius:67px;
+		font-size:24px;
+		line-height: 57px;
+		text-align: center;
+		background:#1d86ff;
+		color:#fff;
+	}
+}

@@ -1,0 +1,16 @@
+//
+   Created by liminshen on 2017/4/13.
+
+
+doctype html
+html(lang="en")
+    head
+        - var titleValue = htmlWebpackPlugin.options.title
+        title=titleValue
+        meta(charset="UTF-8")
+        link(rel='shortcut icon', type='image/x-icon', href='/images/publish/YYT-ico2.png', media='screen')
+        include ./lib.jade
+    body
+        .container
+            block content
+            include ./bottom.jade

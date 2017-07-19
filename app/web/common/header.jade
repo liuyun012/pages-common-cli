@@ -1,0 +1,26 @@
+//mixin 用于头部
+    created by liminshen 2017/05/06
+mixin topbar(pageIndex)
+    - var navItems = [{title:'首页',href:'./home.html'},{title:'了解我们',href:'./about.html', listArr:[{title:'思清音乐简介',href:'./about.html'},{title:'吕思清先生简介',href:'./introduce.html'}]},{title:'教研团队',href:'./our-team.html'},{title:'课程介绍',href:'./course-description.html'},{title:'音乐活动',href:'./activity.html'},{title:'联系我们',href:'./touch.html'}]
+    .topbar
+        .context.clearfix
+            a.leapp-logo(href="./home.html")
+            .nav-container
+                ul.nav-list.clearfix
+                    each item, index in navItems
+                        - if (pageIndex==index)
+                            li
+                                span.nav-item.on=item.title
+                                - if (item.listArr)
+                                    .nav-understand 
+                                        .nav-item-padding
+                                            each items in item.listArr
+                                                    a(href=items.href)=items.title
+                        - else
+                            li
+                                a.nav-item(href=item.href)=item.title
+                                - if (item.listArr)
+                                    .nav-understand 
+                                        .nav-item-padding
+                                            each items in item.listArr
+                                                    a(href=items.href)=items.title

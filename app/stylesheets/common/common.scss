@@ -1,0 +1,57 @@
+@import "reset";
+@import "mixin";
+@import "header";
+.container{
+	width: 100%;
+	min-width: 1200px;
+	background-color: #f7f7f7;
+}
+
+.mr0{
+	margin-right: 0!important;
+}
+.context{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.log-bottom{
+	width: 61px;
+	height: 61px;
+	margin:42px auto;
+}
+.bottom{
+	background:#354251;
+	height:224px;
+	position: relative;
+	.log-in-bottom{
+		width: 357px;
+		height: 152px;
+		position: absolute;
+		top: 46px;
+		left: 48px;
+	}
+	.ewm1{
+		width: 125px;
+		height:125px;
+		position: absolute;
+		top: 46px;
+		right: 210px;
+	}
+	.ewm2{
+		width: 125px;
+		height:125px;
+		position: absolute;
+		top: 46px;
+		right: 39px;
+	}
+}
+
+// 返回上一级箭头
+.arrow{
+    display: block;
+    width: 27px;
+    height: 100px;
+    margin-left: 35px;
+    background-size: 100%;
+}

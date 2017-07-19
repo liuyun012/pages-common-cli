@@ -1,0 +1,28 @@
+{
+  "name": "generate-sapling-pc",
+  "description": "PC端项目脚手架",
+  "main": "bin",
+  "authors": [
+    "icepy"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/sapling-team/generator-sapling-pc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2",
+    "underscore": "^1.5.2",
+    "backbone": "1.0.0",
+    "artTemplate": "^3.0.1",
+    "amazeui": "^2.6.1",
+    "animate.css": "^3.5.2"
+  }
+}

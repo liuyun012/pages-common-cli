@@ -1,0 +1,30 @@
+.confirmContainer{
+	width: 331px;
+	height: 178px;
+}
+.confirm-title{
+	border-bottom:1px solid #e6e6e6;
+	line-height: 112px;
+	font-size: 16px;
+	text-align: center;
+	color:#666;
+}
+.ctrl-box{
+	overflow: hidden;
+	.sure-btn{
+		color:#00c6d0;
+	}
+	.cancel-btn{
+		border-right:1px solid #e6e6e6;
+		color:#999;
+	}
+	.ctrl-btn{
+		float: left;
+		width: 164px;
+		height: 65px;
+		line-height: 65px;
+		text-align: center;
+		font-size: 16px;
+		cursor: pointer;
+	}
+}

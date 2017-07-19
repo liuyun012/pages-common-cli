@@ -1,0 +1,16 @@
+{
+    "random": true,
+    "script": [
+        "jquery/jquery.min.js",
+        "underscore/underscore-min.js",
+        "backbone/backbone-min.js"
+    ],
+    "style": [
+        "animate.css/animate.min.css"
+    ],
+    "title": {
+        "index": "Amaze"
+    },
+    "cdn":"link/",
+    "packlink":[ "link/","static/link/"]
+}

@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true  
+  },
+  "extends": "eslint:recommended",
+  "plugins": [
+    "standard",
+    "promise"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {}
+  },
+  "ecmaFeatures": {
+    // lambda表达式  
+    "arrowFunctions": true,
+    // 解构赋值  
+    "destructuring": true,
+    // class  
+    "classes": true,
+    // http://es6.ruanyifeng.com/#docs/function#函数参数的默认值  
+    "defaultParams": true,
+    // 块级作用域，允许使用let const  
+    "blockBindings": true,
+    // 允许使用模块，模块内默认严格模式  
+    "modules": true,
+    // 允许字面量定义对象时，用表达式做属性名  
+    // http://es6.ruanyifeng.com/#docs/object#属性名表达式  
+    "objectLiteralComputedProperties": true,
+    // 允许对象字面量方法名简写  
+  },
+  "rules": {  
+    "indent": ["error", "tab" , {"SwitchCase":1}],//统一缩进 2
+    "no-mixed-spaces-and-tabs" : 2,//禁止空格和 tab 的混合缩进
+    "require-jsdoc" : 2 , //强制使用jsdoc注释所有函数
+    "semi": ["error", "always"], //;关闭分号自动补全
+    "no-tabs" : 0, //disallow tabs in file 不允许多个tabs在一个文件
+    "camelcase" : 2, //强制双驼峰写法
+    "eqeqeq" : 2, //要求使用 === 和 !==
+    "accessor-pairs" : 2, //强制 getter 和 setter 在对象中成对出现
+
+    "no-empty" : 2, //禁止出现空语句块
+    "no-ex-assign": 2, //禁止对 catch 子句的参数重新赋值
+    "no-alert": 2, //禁用 alert、confirm 和 prompt
+    "no-ex-assign": 2,
+  }  
+}
